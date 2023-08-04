@@ -1,0 +1,60 @@
+body {
+    background: linear-gradient(20deg, #afafee, #f7cfd5, #8a7c61);
+    color: #290303;
+    font-size: 17px;
+    width: 100%;
+    height: 160vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  #title, #description {
+    margin: 1em auto;
+    text-align: center;
+  }
+  #description {
+    font-style: italic;
+  }
+  #survey-form {
+    width: 125vw;
+    min-width: 300px;
+    max-width: 700px;
+    background-color: #0a6bac59;
+    margin: 0 auto;
+    padding: 35px;
+    border-radius: 10px
+  }
+  fieldset {
+    border: none;
+    padding: 5px 15px;
+  }
+  label {
+    display: block;
+    margin: 0.5em 0;
+  }
+  input, textarea, select {
+    margin: 5px 0 0 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #0a6bac59;
+    font-size: 12px;
+    background-color: #e1eef5;
+  }
+  .unset {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  input[type="checkbox"], input[type="radio"] {
+    border: 0;
+    height: 1em;
+  }
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 3em;
+    font-size: 0.7em;
+    background-color: #0a6bac59;
+    color: #290303;
+  }

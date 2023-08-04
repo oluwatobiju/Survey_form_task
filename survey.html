@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial = 1.0">
+    <link rel="stylesheet" href="survey.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for viewing my site</p>
+    <!--The Form-->
+    <form id="survey-form">
+      <!--The Bio Fieldset-->
+      <fieldset>
+        <label for="name" id="name-label">Name:<input id="name" type="text" name="name" required placeholder="Enter your name"/></label>
+        <label for="email" id="email-label">Email:<input id="email" type="email" name="email" required placeholder="Enter your email" /></label>
+        <label for="number" id="number-label">Age:<input id="number" type="number" min="18" max="45" name="number" required placeholder="Age" /></label>
+      </fieldset>
+      <!--The Role Fieldset-->
+      <fieldset>
+        <p>Which option best describes current role</p>
+        <label for="dropdown" id="role-label">
+          <select id="dropdown">
+            <option value="" selected>Select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Internship</option>
+            <option value="3">Full-time Job</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <p>Would you recommend me to a friend?</p>
+        <label for="yes"><input id="yes" type="radio" name="referral" value="yes" class="unset" />Yes</label>
+        <label for="maybe"><input id="maybe" type="radio" name="referral" value="maybe" class="unset" />Maybe</label>
+        <label for="no"><input id="no" type="radio" name="referral" value="no" class="unset" />No</label>
+      </fieldset>
+      <!--The Feedback Fieldset-->
+      <fieldset>
+        <p>What is your favourite feature on my site</p>
+        <label for="feature">
+          <select id="feature">
+            <option value="" selected>Select an option</option>
+            <option value="1">Challenges</option>
+            <option value="2">Community</option>
+            <option value="3">Opensource</option>
+          </select>
+        </label>
+        <p>What would like to see improved?</p>
+        <label for="front-end"><input id="front-end" type="checkbox" value="front-end" class="unset" />Front-end Projects</label>
+        <label for="back-end"><input id="back-end" type="checkbox" value="back-end" class="unset" />Back-end Projects</label>
+        <label for="data_visual"><input id="data_visual" type="checkbox" value="data-visual" class="unset" />Data Visualization</label>
+        <label for="chanllenges"><input id="chanllenges" type="checkbox" value="chanllenges" class="unset" />Chanllenges</label>
+        <label for="add_courses"><input id="add_courses" type="checkbox" value="add_courses" class="unset" />Additional Courses</label>
+        <p>Any comments or suggestions</p>
+        <label for="suggest">
+          <textarea id="suggest" rows="3" cols="30" placeholder="Enter Your comments"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
